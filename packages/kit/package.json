@@ -31,7 +31,7 @@
     "@radix-ui/react-dialog": "1.0.2",
     "@suiet/wallet-sdk": "workspace:*",
     "@svgr/rollup": "6.5.1",
-    "@wallet-standard/core": "1.0.3",
+    "@wallet-standard/core": "1.1.0",
     "buffer": "6.0.3",
     "classnames": "2.3.2",
     "lodash-es": "4.17.21",
