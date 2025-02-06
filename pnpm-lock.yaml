@@ -31,7 +31,7 @@ importers:
         version: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)
       eslint-plugin-jest:
         specifier: ^27.2.2
-        version: 27.9.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(jest@28.1.3)(typescript@5.6.3)
+        version: 27.9.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(jest@28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3)))(typescript@5.6.3)
       eslint-plugin-n:
         specifier: ^15.7.0
         version: 15.7.0(eslint@8.57.1)
@@ -66,8 +66,8 @@ importers:
         specifier: 0.13.7
         version: 0.13.7(typescript@5.1.6)
       '@mysten/zksend':
-        specifier: 0.11.0
-        version: 0.11.0(typescript@5.1.6)
+        specifier: 0.12.16
+        version: 0.12.16(typescript@5.1.6)
       '@radix-ui/react-dialog':
         specifier: 1.0.2
         version: 1.0.2(@types/react@18.0.25)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -181,8 +181,8 @@ importers:
         specifier: 0.13.7
         version: 0.13.7(typescript@5.1.6)
       '@mysten/zksend':
-        specifier: 0.11.0
-        version: 0.11.0(typescript@5.1.6)
+        specifier: 0.12.16
+        version: 0.12.16(typescript@5.1.6)
       '@noble/hashes':
         specifier: 1.3.0
         version: 1.3.0
@@ -1569,11 +1569,11 @@ packages:
   '@mysten/bcs@0.3.0':
     resolution: {integrity: sha512-Me6OkrS+idPq+ZUM1MEcKP9YOTacZKLwo0gf8rfeImQ+G25tqPRhjpccZGOUJGOKh+gojH2vjkWi2TYJv9kNCg==}
 
-  '@mysten/bcs@1.0.4':
-    resolution: {integrity: sha512-6JoQi59GN/dVEBCNq8Rj4uOR0niDrJqDx/2gNQWXANwJakHIGH0AMniHrXP41B2dF+mZ3HVmh9Hi3otiEVQTrQ==}
-
   '@mysten/bcs@1.1.0':
     resolution: {integrity: sha512-yy9/1Y4d0FlRywS1+9ze/T7refCbrvwFwJIOKs9M3QBK1njbcHZp+LkVeLqBvIJA5eZ3ZCzmhQ1Xq4Sed5mEBA==}
+
+  '@mysten/bcs@1.4.0':
+    resolution: {integrity: sha512-YwDYspceLt8b7v6ohPvy8flQEi+smtfSG5d2A98CbUA48XBmOqTSPNmpw9wsZVVnrH2avr+BS5uVhDZT+EquYA==}
 
   '@mysten/sui.js@0.14.0':
     resolution: {integrity: sha512-jQdeg6DfCtvwhcyKS8ipYSjMiKhDynWYzPcoO5MkcrATsEf8/Ktt7EU6+xEa3rfNLhYVKS5Qo2c2Nno+/HtlTA==}
@@ -1584,8 +1584,8 @@ packages:
     resolution: {integrity: sha512-DrSyja04xyGrTGlIQKMwZ6MywxNPkjyIcDLm915Zisoy1/uIgPoHc4cx53JyiG92z/HgowTVGGCCIzH53DIYXA==}
     engines: {node: '>=18'}
 
-  '@mysten/sui@1.8.0':
-    resolution: {integrity: sha512-iL7yztpePS/GWFZ7yiD/Pl7ciuOD2ySyogJZmLFu4WxZfiIcXJX+U/U+Egq9VHvELk8+m+Z1OvvPlNQfuowMIg==}
+  '@mysten/sui@1.21.2':
+    resolution: {integrity: sha512-8AesvczokAUv796XiOo8af2+1IYA9bRon11Ra+rwehvqhz+sMRT8A+Cw5sDnlSc9/aQwM51JQKUnvMczNbpfYA==}
     engines: {node: '>=18'}
 
   '@mysten/wallet-adapter-base@0.3.0':
@@ -1596,14 +1596,14 @@ packages:
     resolution: {integrity: sha512-PnbXWiH2hoWMu3FFZ5OY2PKTnRrTa+ZGy1UEA4EuYeW0kO+iUi56Us8yss9ZbrwWCAUbRs6k+ujbmGECg1VOkA==}
     deprecated: Wallet adapters have been deprecated in favor of the Wallet Standard. Please upgrade to the latest Wallet Kit versions.
 
-  '@mysten/wallet-standard@0.13.3':
-    resolution: {integrity: sha512-aLxhLIM6uzsfBZ5HbOLrvw1WrzHGPzysUmiFrXRizNpclz2DqxeqngDiDq8VogKM2bXCjhF0SxSc+Bj+relp7w==}
+  '@mysten/wallet-standard@0.13.26':
+    resolution: {integrity: sha512-0fRHmQ5RS0WEeSyfzdqrOWLssrZwDgR9Mw7Qhsfzq1UyDlS/GXYoL+dKpH+Uqfan33lt6hROPeXFyqw/vmF9Zg==}
 
   '@mysten/wallet-standard@0.13.7':
     resolution: {integrity: sha512-FXlqn3Gp4E7aQf33rZQfaCEUeEq9TbmkIFA7kX/Yab5SC5892XVhkLRu040eBs8Cest98jFUZ2ZJ4YWR+a7e5g==}
 
-  '@mysten/zksend@0.11.0':
-    resolution: {integrity: sha512-Q44ljYpH2Om8kOu/P+gxhZjFh8HgGXM3fdvpv3u0Fh+IbZW0ypv6G2RGDwldWBXY+pYO4xVpxres8QfC4CzALQ==}
+  '@mysten/zksend@0.12.16':
+    resolution: {integrity: sha512-DmO3CS+mIQ4t4VeHEpu4uD3VxpImWzcM60HZMLhrn1yO2yP2FJky6Wwa58au2ziGDlY4OZoYuHsUS+7Dx2TUlw==}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
@@ -2459,20 +2459,45 @@ packages:
     resolution: {integrity: sha512-LnLYq2Vy2guTZ8GQKKSXQK3+FRGPil75XEdkZqE6fiLixJhZJoJa5hT7lXxwe0ykVTt9LEThdTbOpT7KadS26Q==}
     engines: {node: '>=16'}
 
+  '@wallet-standard/app@1.1.0':
+    resolution: {integrity: sha512-3CijvrO9utx598kjr45hTbbeeykQrQfKmSnxeWOgU25TOEpvcipD/bYDQWIqUv1Oc6KK4YStokSMu/FBNecGUQ==}
+    engines: {node: '>=16'}
+
   '@wallet-standard/base@1.0.1':
     resolution: {integrity: sha512-1To3ekMfzhYxe0Yhkpri+Fedq0SYcfrOfJi3vbLjMwF2qiKPjTGLwZkf2C9ftdQmxES+hmxhBzTwF4KgcOwf8w==}
+    engines: {node: '>=16'}
+
+  '@wallet-standard/base@1.1.0':
+    resolution: {integrity: sha512-DJDQhjKmSNVLKWItoKThJS+CsJQjR9AOBOirBVT1F9YpRyC9oYHE+ZnSf8y8bxUphtKqdQMPVQ2mHohYdRvDVQ==}
     engines: {node: '>=16'}
 
   '@wallet-standard/core@1.0.3':
     resolution: {integrity: sha512-Jb33IIjC1wM1HoKkYD7xQ6d6PZ8EmMZvyc8R7dFgX66n/xkvksVTW04g9yLvQXrLFbcIjHrCxW6TXMhvpsAAzg==}
     engines: {node: '>=16'}
 
+  '@wallet-standard/core@1.1.0':
+    resolution: {integrity: sha512-v2W5q/NlX1qkn2q/JOXQT//pOAdrhz7+nOcO2uiH9+a0uvreL+sdWWqkhFmMcX+HEBjaibdOQMUoIfDhOGX4XA==}
+    engines: {node: '>=16'}
+
+  '@wallet-standard/errors@0.1.0':
+    resolution: {integrity: sha512-ag0eq5ixy7rz8M5YUWGi/EoIJ69KJ+KILFNunoufgmXVkiISC7+NIZXJYTJrapni4f9twE1hfT+8+IV2CYCvmg==}
+    engines: {node: '>=16'}
+    hasBin: true
+
   '@wallet-standard/features@1.0.3':
     resolution: {integrity: sha512-m8475I6W5LTatTZuUz5JJNK42wFRgkJTB0I9tkruMwfqBF2UN2eomkYNVf9RbrsROelCRzSFmugqjKZBFaubsA==}
     engines: {node: '>=16'}
 
+  '@wallet-standard/features@1.1.0':
+    resolution: {integrity: sha512-hiEivWNztx73s+7iLxsuD1sOJ28xtRix58W7Xnz4XzzA/pF0+aicnWgjOdA10doVDEDZdUuZCIIqG96SFNlDUg==}
+    engines: {node: '>=16'}
+
   '@wallet-standard/wallet@1.0.1':
     resolution: {integrity: sha512-qkhJeuQU2afQTZ02yMZE5SFc91Fo3hyFjFkpQglHudENNyiSG0oUKcIjky8X32xVSaumgTZSQUAzpXnCTWHzKQ==}
+    engines: {node: '>=16'}
+
+  '@wallet-standard/wallet@1.1.0':
+    resolution: {integrity: sha512-Gt8TnSlDZpAl+RWOOAB/kuvC7RpcdWAlFbHNoi4gsXsfaWa1QCT6LBcfIYTPdOZC9OVZUDwqGuGAcqZejDmHjg==}
     engines: {node: '>=16'}
 
   '@webassemblyjs/ast@1.12.1':
@@ -3153,6 +3178,10 @@ packages:
   commander@11.0.0:
     resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
     engines: {node: '>=16'}
+
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
 
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -5122,6 +5151,9 @@ packages:
   joi@17.13.3:
     resolution: {integrity: sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA==}
 
+  jose@5.9.6:
+    resolution: {integrity: sha512-AMlnetc9+CV9asI19zHmrgS/WYsWUwCn2R7RzlbJWD7F9eWYUTGyBmU9o6PxngtLGOiDGPRu+Uc4fhKzbpteZQ==}
+
   js-sha3@0.8.0:
     resolution: {integrity: sha512-gF1cRrHhIzNfToc802P800N8PpXS+evLLXfsVpowqmAFR9uwbi89WvXg2QspOmXL8QL86J4T1EpFu+yUkwJY3Q==}
 
@@ -6072,6 +6104,9 @@ packages:
   pkg-up@3.1.0:
     resolution: {integrity: sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==}
     engines: {node: '>=8'}
+
+  poseidon-lite@0.2.1:
+    resolution: {integrity: sha512-xIr+G6HeYfOhCuswdqcFpSX47SPhm0EpisWJ6h7fHlWwaVIvH3dLnejpatrtw6Xc6HaLrpq05y7VRfvDmDGIog==}
 
   possible-typed-array-names@1.0.0:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
@@ -9903,42 +9938,6 @@ snapshots:
       jest-util: 28.1.3
       slash: 3.0.0
 
-  '@jest/core@28.1.3':
-    dependencies:
-      '@jest/console': 28.1.3
-      '@jest/reporters': 28.1.3
-      '@jest/test-result': 28.1.3
-      '@jest/transform': 28.1.3
-      '@jest/types': 28.1.3
-      '@types/node': 20.4.2
-      ansi-escapes: 4.3.2
-      chalk: 4.1.2
-      ci-info: 3.9.0
-      exit: 0.1.2
-      graceful-fs: 4.2.11
-      jest-changed-files: 28.1.3
-      jest-config: 28.1.3(@types/node@20.4.2)
-      jest-haste-map: 28.1.3
-      jest-message-util: 28.1.3
-      jest-regex-util: 28.0.2
-      jest-resolve: 28.1.3
-      jest-resolve-dependencies: 28.1.3
-      jest-runner: 28.1.3
-      jest-runtime: 28.1.3
-      jest-snapshot: 28.1.3
-      jest-util: 28.1.3
-      jest-validate: 28.1.3
-      jest-watcher: 28.1.3
-      micromatch: 4.0.8
-      pretty-format: 28.1.3
-      rimraf: 3.0.2
-      slash: 3.0.0
-      strip-ansi: 6.0.1
-    transitivePeerDependencies:
-      - supports-color
-      - ts-node
-    optional: true
-
   '@jest/core@28.1.3(ts-node@10.9.1(@types/node@20.4.2)(typescript@5.1.6))':
     dependencies:
       '@jest/console': 28.1.3
@@ -10008,6 +10007,42 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - ts-node
+
+  '@jest/core@28.1.3(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))':
+    dependencies:
+      '@jest/console': 28.1.3
+      '@jest/reporters': 28.1.3
+      '@jest/test-result': 28.1.3
+      '@jest/transform': 28.1.3
+      '@jest/types': 28.1.3
+      '@types/node': 20.4.2
+      ansi-escapes: 4.3.2
+      chalk: 4.1.2
+      ci-info: 3.9.0
+      exit: 0.1.2
+      graceful-fs: 4.2.11
+      jest-changed-files: 28.1.3
+      jest-config: 28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))
+      jest-haste-map: 28.1.3
+      jest-message-util: 28.1.3
+      jest-regex-util: 28.0.2
+      jest-resolve: 28.1.3
+      jest-resolve-dependencies: 28.1.3
+      jest-runner: 28.1.3
+      jest-runtime: 28.1.3
+      jest-snapshot: 28.1.3
+      jest-util: 28.1.3
+      jest-validate: 28.1.3
+      jest-watcher: 28.1.3
+      micromatch: 4.0.8
+      pretty-format: 28.1.3
+      rimraf: 3.0.2
+      slash: 3.0.0
+      strip-ansi: 6.0.1
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    optional: true
 
   '@jest/environment@28.1.3':
     dependencies:
@@ -10238,11 +10273,11 @@ snapshots:
     dependencies:
       bn.js: 5.2.1
 
-  '@mysten/bcs@1.0.4':
+  '@mysten/bcs@1.1.0':
     dependencies:
       bs58: 6.0.0
 
-  '@mysten/bcs@1.1.0':
+  '@mysten/bcs@1.4.0':
     dependencies:
       bs58: 6.0.0
 
@@ -10304,10 +10339,10 @@ snapshots:
       - '@gql.tada/vue-support'
       - typescript
 
-  '@mysten/sui@1.8.0(typescript@5.1.6)':
+  '@mysten/sui@1.21.2(typescript@5.1.6)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
-      '@mysten/bcs': 1.0.4
+      '@mysten/bcs': 1.4.0
       '@noble/curves': 1.6.0
       '@noble/hashes': 1.5.0
       '@scure/bip32': 1.5.0
@@ -10316,7 +10351,8 @@ snapshots:
       bech32: 2.0.0
       gql.tada: 1.8.10(graphql@16.9.0)(typescript@5.1.6)
       graphql: 16.9.0
-      tweetnacl: 1.0.3
+      jose: 5.9.6
+      poseidon-lite: 0.2.1
       valibot: 0.36.0
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
@@ -10340,10 +10376,10 @@ snapshots:
       - encoding
       - utf-8-validate
 
-  '@mysten/wallet-standard@0.13.3(typescript@5.1.6)':
+  '@mysten/wallet-standard@0.13.26(typescript@5.1.6)':
     dependencies:
-      '@mysten/sui': 1.8.0(typescript@5.1.6)
-      '@wallet-standard/core': 1.0.3
+      '@mysten/sui': 1.21.2(typescript@5.1.6)
+      '@wallet-standard/core': 1.1.0
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
       - '@gql.tada/vue-support'
@@ -10367,10 +10403,10 @@ snapshots:
       - '@gql.tada/vue-support'
       - typescript
 
-  '@mysten/zksend@0.11.0(typescript@5.1.6)':
+  '@mysten/zksend@0.12.16(typescript@5.1.6)':
     dependencies:
-      '@mysten/sui': 1.8.0(typescript@5.1.6)
-      '@mysten/wallet-standard': 0.13.3(typescript@5.1.6)
+      '@mysten/sui': 1.21.2(typescript@5.1.6)
+      '@mysten/wallet-standard': 0.13.26(typescript@5.1.6)
       mitt: 3.0.1
       nanostores: 0.10.3
       valibot: 0.36.0
@@ -11397,7 +11433,13 @@ snapshots:
     dependencies:
       '@wallet-standard/base': 1.0.1
 
+  '@wallet-standard/app@1.1.0':
+    dependencies:
+      '@wallet-standard/base': 1.1.0
+
   '@wallet-standard/base@1.0.1': {}
+
+  '@wallet-standard/base@1.1.0': {}
 
   '@wallet-standard/core@1.0.3':
     dependencies:
@@ -11406,13 +11448,34 @@ snapshots:
       '@wallet-standard/features': 1.0.3
       '@wallet-standard/wallet': 1.0.1
 
+  '@wallet-standard/core@1.1.0':
+    dependencies:
+      '@wallet-standard/app': 1.1.0
+      '@wallet-standard/base': 1.1.0
+      '@wallet-standard/errors': 0.1.0
+      '@wallet-standard/features': 1.1.0
+      '@wallet-standard/wallet': 1.1.0
+
+  '@wallet-standard/errors@0.1.0':
+    dependencies:
+      chalk: 5.3.0
+      commander: 12.1.0
+
   '@wallet-standard/features@1.0.3':
     dependencies:
       '@wallet-standard/base': 1.0.1
 
+  '@wallet-standard/features@1.1.0':
+    dependencies:
+      '@wallet-standard/base': 1.1.0
+
   '@wallet-standard/wallet@1.0.1':
     dependencies:
       '@wallet-standard/base': 1.0.1
+
+  '@wallet-standard/wallet@1.1.0':
+    dependencies:
+      '@wallet-standard/base': 1.1.0
 
   '@webassemblyjs/ast@1.12.1':
     dependencies:
@@ -12225,6 +12288,8 @@ snapshots:
   comma-separated-tokens@1.0.8: {}
 
   commander@11.0.0: {}
+
+  commander@12.1.0: {}
 
   commander@2.20.3: {}
 
@@ -13041,13 +13106,13 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(jest@28.1.3)(typescript@5.6.3):
+  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(jest@28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3)))(typescript@5.6.3):
     dependencies:
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.1)(typescript@5.6.3)
       eslint: 8.57.1
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)
-      jest: 28.1.3
+      jest: 28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -14307,26 +14372,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jest-cli@28.1.3:
-    dependencies:
-      '@jest/core': 28.1.3
-      '@jest/test-result': 28.1.3
-      '@jest/types': 28.1.3
-      chalk: 4.1.2
-      exit: 0.1.2
-      graceful-fs: 4.2.11
-      import-local: 3.2.0
-      jest-config: 28.1.3
-      jest-util: 28.1.3
-      jest-validate: 28.1.3
-      prompts: 2.4.2
-      yargs: 17.7.2
-    transitivePeerDependencies:
-      - '@types/node'
-      - supports-color
-      - ts-node
-    optional: true
-
   jest-cli@28.1.3(@types/node@20.4.2)(ts-node@10.9.1(@types/node@20.4.2)(typescript@5.1.6)):
     dependencies:
       '@jest/core': 28.1.3(ts-node@10.9.1(@types/node@20.4.2)(typescript@5.1.6))
@@ -14365,62 +14410,24 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-config@28.1.3:
+  jest-cli@28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3)):
     dependencies:
-      '@babel/core': 7.25.8
-      '@jest/test-sequencer': 28.1.3
+      '@jest/core': 28.1.3(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))
+      '@jest/test-result': 28.1.3
       '@jest/types': 28.1.3
-      babel-jest: 28.1.3(@babel/core@7.25.8)
       chalk: 4.1.2
-      ci-info: 3.9.0
-      deepmerge: 4.3.1
-      glob: 7.2.3
+      exit: 0.1.2
       graceful-fs: 4.2.11
-      jest-circus: 28.1.3
-      jest-environment-node: 28.1.3
-      jest-get-type: 28.0.2
-      jest-regex-util: 28.0.2
-      jest-resolve: 28.1.3
-      jest-runner: 28.1.3
+      import-local: 3.2.0
+      jest-config: 28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))
       jest-util: 28.1.3
       jest-validate: 28.1.3
-      micromatch: 4.0.8
-      parse-json: 5.2.0
-      pretty-format: 28.1.3
-      slash: 3.0.0
-      strip-json-comments: 3.1.1
+      prompts: 2.4.2
+      yargs: 17.7.2
     transitivePeerDependencies:
+      - '@types/node'
       - supports-color
-    optional: true
-
-  jest-config@28.1.3(@types/node@20.4.2):
-    dependencies:
-      '@babel/core': 7.25.8
-      '@jest/test-sequencer': 28.1.3
-      '@jest/types': 28.1.3
-      babel-jest: 28.1.3(@babel/core@7.25.8)
-      chalk: 4.1.2
-      ci-info: 3.9.0
-      deepmerge: 4.3.1
-      glob: 7.2.3
-      graceful-fs: 4.2.11
-      jest-circus: 28.1.3
-      jest-environment-node: 28.1.3
-      jest-get-type: 28.0.2
-      jest-regex-util: 28.0.2
-      jest-resolve: 28.1.3
-      jest-runner: 28.1.3
-      jest-util: 28.1.3
-      jest-validate: 28.1.3
-      micromatch: 4.0.8
-      parse-json: 5.2.0
-      pretty-format: 28.1.3
-      slash: 3.0.0
-      strip-json-comments: 3.1.1
-    optionalDependencies:
-      '@types/node': 20.4.2
-    transitivePeerDependencies:
-      - supports-color
+      - ts-node
     optional: true
 
   jest-config@28.1.3(@types/node@20.4.2)(ts-node@10.9.1(@types/node@20.4.2)(typescript@5.1.6)):
@@ -14482,6 +14489,37 @@ snapshots:
       ts-node: 10.9.2(@types/node@20.4.2)(typescript@5.1.6)
     transitivePeerDependencies:
       - supports-color
+
+  jest-config@28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3)):
+    dependencies:
+      '@babel/core': 7.25.8
+      '@jest/test-sequencer': 28.1.3
+      '@jest/types': 28.1.3
+      babel-jest: 28.1.3(@babel/core@7.25.8)
+      chalk: 4.1.2
+      ci-info: 3.9.0
+      deepmerge: 4.3.1
+      glob: 7.2.3
+      graceful-fs: 4.2.11
+      jest-circus: 28.1.3
+      jest-environment-node: 28.1.3
+      jest-get-type: 28.0.2
+      jest-regex-util: 28.0.2
+      jest-resolve: 28.1.3
+      jest-runner: 28.1.3
+      jest-util: 28.1.3
+      jest-validate: 28.1.3
+      micromatch: 4.0.8
+      parse-json: 5.2.0
+      pretty-format: 28.1.3
+      slash: 3.0.0
+      strip-json-comments: 3.1.1
+    optionalDependencies:
+      '@types/node': 20.4.2
+      ts-node: 10.9.2(@types/node@20.4.2)(typescript@5.6.3)
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
 
   jest-diff@28.1.3:
     dependencies:
@@ -14739,18 +14777,6 @@ snapshots:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jest@28.1.3:
-    dependencies:
-      '@jest/core': 28.1.3
-      '@jest/types': 28.1.3
-      import-local: 3.2.0
-      jest-cli: 28.1.3
-    transitivePeerDependencies:
-      - '@types/node'
-      - supports-color
-      - ts-node
-    optional: true
-
   jest@28.1.3(@types/node@20.4.2)(ts-node@10.9.1(@types/node@20.4.2)(typescript@5.1.6)):
     dependencies:
       '@jest/core': 28.1.3(ts-node@10.9.1(@types/node@20.4.2)(typescript@5.1.6))
@@ -14773,6 +14799,18 @@ snapshots:
       - supports-color
       - ts-node
 
+  jest@28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3)):
+    dependencies:
+      '@jest/core': 28.1.3(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))
+      '@jest/types': 28.1.3
+      import-local: 3.2.0
+      jest-cli: 28.1.3(@types/node@20.4.2)(ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3))
+    transitivePeerDependencies:
+      - '@types/node'
+      - supports-color
+      - ts-node
+    optional: true
+
   jiti@1.21.6: {}
 
   jju@1.4.0: {}
@@ -14784,6 +14822,8 @@ snapshots:
       '@sideway/address': 4.1.5
       '@sideway/formula': 3.0.1
       '@sideway/pinpoint': 2.0.0
+
+  jose@5.9.6: {}
 
   js-sha3@0.8.0: {}
 
@@ -15618,6 +15658,8 @@ snapshots:
   pkg-up@3.1.0:
     dependencies:
       find-up: 3.0.0
+
+  poseidon-lite@0.2.1: {}
 
   possible-typed-array-names@1.0.0: {}
 
@@ -17175,6 +17217,25 @@ snapshots:
       diff: 4.0.2
       make-error: 1.3.6
       typescript: 5.1.6
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    optional: true
+
+  ts-node@10.9.2(@types/node@20.4.2)(typescript@5.6.3):
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.11
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.4.2
+      acorn: 8.13.0
+      acorn-walk: 8.3.4
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 5.6.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     optional: true
